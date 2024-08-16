@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="fluid-container">
+
+    <div class="box">
+
+        <div class="form">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+            <label for="userName"><b>userName</b></label>
+            <input type="text" placeholder="Enter userName" name="userName" id="userName" required>
+  
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+           
+            <p>Already have an Acc? <a href="signIn.html">SignIn</a></p>
+        </div>
+
+        <button type="submit" id="signUp_btn" class="btn">Login</button>
+    </div>
+    
+    <script src="firebase.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    
+</body>
+</html>
+
+

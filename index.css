@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fluid Container Styling */
+.fluid-container {
+    background-image: url(assets/images/cooding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Container Styling */
+.box {
+    position: relative;
+    right: 50px;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Elements Styling */
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus Styling */
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Placeholder Text Styling */
+.form input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #492888;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #27708d;
+}
+
+/* Responsive Design: Small Devices (Mobile) */
+@media (max-width: 600px) {
+    .fluid-container {
+        justify-content: center; /* Center the form on small screens */
+    }
+
+    .box {
+        right: 0; /* Remove the right offset for small screens */
+        width: 100%; /* Full width on small screens */
+        max-width: 100%; /* Allow the form to be full width */
+        padding: 20px; /* Adjust padding for small screens */
+    }
+
+    .form input[type="submit"] {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    .form label {
+        font-size: 13px; /* Slightly smaller labels on mobile */
+    }
+
+    .form input[type="text"],
+    .form input[type="password"] {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller input fields */
+    }
+}
+
+/* Responsive Design: Medium Devices (Tablets) */
+@media (max-width: 900px) {
+    .box {
+        width: 80%; /* Slightly wider on tablets */
+        right: 0; /* Reduce or remove the right offset */
+    }
+}
+
+/* Responsive Design: Large Devices (Desktop) */
+@media (min-width: 1200px) {
+    .box {
+        width: 70%; /* Maintain the original width */
+        right: 50px; /* Keep the right offset for larger screens */
+    }
+}

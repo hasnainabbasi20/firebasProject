@@ -1,0 +1,41 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #19899c;
+     
+}
+
+
+header {
+    background: #333;
+    padding: 20px; 
+}
+
+header .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+
+header h1 {
+    font-size: 28px; 
+    color: #fff;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+header h1 span {
+    color: #4CAF50;
+  
+}
